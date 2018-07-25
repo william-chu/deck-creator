@@ -1,10 +1,8 @@
 class Deck {
-  constructor(parameter) {
-    this.prop = parameter;
+  constructor() {
   }
 
   method() {
-    this.prop = value;
   }
 }
 
