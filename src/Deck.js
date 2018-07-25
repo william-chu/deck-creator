@@ -5,7 +5,6 @@ class Deck {
     this.cards = this.genDeck();
   }
 
-
   genDeck() {
     let newDeck = [];
     for (let i = 0; i < this.suits.length; i++) {
@@ -15,6 +14,20 @@ class Deck {
     }
     return newDeck;
   }
+
+  shuffle() {
+    let i = 0;
+    let j = 0;
+    let placeholder = null;
+
+    for (i = this.cards.length - 1; i > 0; i -= 1) {
+      j = Math.floor(Math.random() * (i + 1));
+      placeholder = this.cards[i];
+      this.cards[i] = this.cards[j];
+      this.cards[j] = placeholder;
+    }
+  }
+
 }
 
 export { Deck };

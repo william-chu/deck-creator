@@ -13,7 +13,8 @@ describe('Deck', function() {
   });
 
   it('should shuffle a deck that does not equal new deck', function() {
-    let shuffledDeck = reusableDeck.shuffle();
+    let shuffledDeck = new Deck();
+    shuffledDeck.shuffle();
     console.log(shuffledDeck.cards);
     expect(shuffledDeck.cards).not.toEqual(reusableDeck.cards);
   });
