@@ -1,2 +1,2 @@
-// import { function } from './class';
-// import './styles.css';
+import { Deck } from './Deck';
+import './styles.css';
