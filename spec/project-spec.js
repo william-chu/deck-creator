@@ -1,13 +1,13 @@
-import { Class } from "./../src/class.js";
+import { Deck } from "./../src/Deck.js";
 
-describe('Class', function() {
+describe('Deck', function() {
   let reusableObject;
 
   beforeEach(function() {
-    reusableObject = new Class(parameter);
+    reusableDeck = new Deck();
   });
 
-  it('describe test', function() {
-    expect(reusableObject.prop).toEqual(value);
+  it('Deck contains 52 card items', function() {
+    expect(reusableDeck.length).toEqual(52);
   });
 });
