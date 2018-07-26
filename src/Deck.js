@@ -9,7 +9,7 @@ class Deck {
     let newDeck = [];
     for (let i = 0; i < this.suits.length; i++) {
       for (let j = 0; j < this.values.length; j++) {
-        newDeck.push(this.values[j] + ':' + this.suits[i]);
+        newDeck.push([this.values[j], this.suits[i]]);
       }
     }
     return newDeck;
