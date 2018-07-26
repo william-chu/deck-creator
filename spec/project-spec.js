@@ -18,7 +18,7 @@ describe('Deck', function() {
     expect(shuffledDeck.cards).not.toEqual(reusableDeck.cards);
   });
 
-  it('should sort a shuffled deck by value', function() {
+  it('should sort a shuffled deck by value smallest to largest', function() {
     reusableDeck.sortByValue();
     isSorted = reusableDeck.cards.every( (item, i, cardsArr) => i > 0 ? cardsArr[i][0] >= cardsArr[i - 1][0] : cardsArr[i][0] <= cardsArr[i + 1][0] );
     expect(isSorted).toBe(true);
