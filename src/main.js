@@ -2,9 +2,9 @@ import { Deck } from './Deck';
 import './styles.css';
 
 document.addEventListener("DOMContentLoaded", function() {
-  let deck = new Deck();
+  const deck = new Deck();
   const displayDeck = (cardsArr) => {
-    let cardGrid = document.getElementById('card-grid');
+    const cardGrid = document.getElementById('card-grid');
     cardGrid.innerHTML = "";
     cardsArr.forEach((card) => {
       let cardToDisplay = document.createElement("div");

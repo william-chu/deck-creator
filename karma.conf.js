@@ -5,7 +5,7 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'src/*.js',
+      'src/Deck.js',
       'spec/*spec.js'
     ],
     webpack: webpackConfig,

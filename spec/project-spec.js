@@ -2,10 +2,11 @@ import { Deck } from "./../src/Deck.js";
 
 describe('Deck', function() {
   let reusableDeck;
-  let isSorted = false;
+  let isSorted;
 
   beforeEach(function() {
     reusableDeck = new Deck();
+    isSorted = false;
   });
 
   it('should generate a deck of cards that contains 52 array items', function() {
