@@ -14,7 +14,7 @@
 
 ## Assumptions
 
-Requirements are defining a standard 52 card deck, this was determined based on the number of cards and suits defined in the requirements
+Deck refers to a standard 52 card deck based on the number of cards and suits defined in the requirements
 
 Ascending order is based on smallest to largest value, Ace is assigned a value of 1, Jack 11, Queen 12, King 13
 
