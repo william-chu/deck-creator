@@ -12,6 +12,12 @@
 5. Be prepared to explain what you did and why you did it.
 6. OPTIONAL - Provide functioning unit tests
 
+## Assumptions
+
+Requirements are defining a standard 52 card deck, this was determined based on the number of cards and suits defined in the requirements
+
+Ascending order is based on smallest to largest value, Ace is assigned a value of 1, Jack 11, Queen 12, King 13
+
 ## Specifications
 
 | Specification | Input | Output |
@@ -22,12 +28,12 @@
 
 ## Setup/Installation Requirements
 
-* To view project code, _clone repository from_ https://github.com/william-chu/deck-generator
+* To view project code clone repository from https://github.com/william-chu/deck-generator
 * Install Node.js https://nodejs.org/en/
-* Open terminal, navigate to project root folder and run npm install
-* To bundle and build project distribution folder, run npm run build
-* To view Jasmine tests, run npm test
-* To view project in development mode, run npm start
+* Open terminal, navigate to project root folder and run `npm install`
+* To bundle and build project distribution folder, run `npm run build`
+* To view Jasmine tests, run `npm test`
+* To view project in development mode, run `npm start`
 
 ## Known Bugs
 

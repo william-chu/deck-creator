@@ -8,19 +8,33 @@ document.addEventListener("DOMContentLoaded", function() {
     cardGrid.innerHTML = "";
     cardsArr.forEach((card) => {
       let cardToDisplay = document.createElement("div");
-      let symbol;
-      if (card[1] === 'hearts') {
-        symbol = '♥';
-      } else if (card[1] === 'diamonds') {
-        symbol = '♦';
-      } else if (card[1] === 'clubs') {
-        symbol = '♣';
+      let cardValue;
+      let cardSuit;
+      if (card[0] === 1) {
+        cardValue = 'A';
+      } else if (card[0] === 11) {
+        cardValue = 'J';
+      } else if (card[0] === 12) {
+        cardValue = 'Q';
+      } else if (card[0] === 13) {
+        cardValue = 'K';
       } else {
-        symbol = '♠';
+        cardValue = card[0];
       }
-  	  cardToDisplay.className = "card";
-  	  cardToDisplay.append(card[0]);
-  	  cardToDisplay.append(symbol);
+      if (card[1] === 'hearts') {
+        cardSuit = '♥';
+        cardToDisplay.className = 'red';
+      } else if (card[1] === 'diamonds') {
+        cardSuit = '♦';
+        cardToDisplay.className = 'red';
+      } else if (card[1] === 'clubs') {
+        cardSuit = '♣';
+      } else {
+        cardSuit = '♠';
+      }
+  	  cardToDisplay.className += ' card';
+  	  cardToDisplay.append(cardValue);
+  	  cardToDisplay.append(cardSuit);
       cardGrid.appendChild(cardToDisplay);
     })
   }
